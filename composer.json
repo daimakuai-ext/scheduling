@@ -1,0 +1,36 @@
+{
+    "name": "daimakuai-ext/scheduling",
+    "description": "Task scheduling extension for daimakuai-ext",
+    "type": "library",
+    "keywords": ["daimakuai-ext", "task", "Scheduling"],
+    "homepage": "https://github.com/daimakuai-ext/scheduling",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yt",
+            "email": "431910788@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.5.*",
+        "jblv/daimakuai": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "laravel/laravel": "5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jblv\\Admin\\Scheduling\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jblv\\Admin\\Scheduling\\SchedulingServiceProvider"
+            ]
+
+        }
+    }
+}
